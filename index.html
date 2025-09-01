@@ -1,0 +1,639 @@
+ !DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>جمعية رسالة نور - Resalat Nour Association</title>
+    <meta name="description" content="Join Resalat Nour Association in our mission to create positive change in communities worldwide. Donate, volunteer, and make a difference today.">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Cairo:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Language Toggle -->
+    <div class="language-toggle">
+        <button id="langToggle" class="lang-btn">
+            <i class="fas fa-globe"></i>
+            <span class="lang-text" data-en="EN" data-ar="عربي">EN</span>
+        </button>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <img src="assets/logo_gam3ya.jpg" alt="Resalat Nour Association Logo" class="logo-img">
+                <div class="logo-text">
+                    <span class="org-name-en">Resalat Nour Association</span>
+                    <span class="org-name-ar">جمعية رسالة نور</span>
+                </div>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link active">
+                        <span class="nav-text-en">Home</span>
+                        <span class="nav-text-ar">الرئيسية</span>
+                    </a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a href="about.html" class="nav-link">
+                        <span class="nav-text-en">About Us</span>
+                        <span class="nav-text-ar">من نحن</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a href="about.html#mission">
+                            <span class="dropdown-text-en">Our Mission</span>
+                            <span class="dropdown-text-ar">مهمتنا</span>
+                        </a></li>
+                        <li><a href="about.html#vision">
+                            <span class="dropdown-text-en">Our Vision</span>
+                            <span class="dropdown-text-ar">رؤيتنا</span>
+                        </a></li>
+                        <li><a href="about.html#values">
+                            <span class="dropdown-text-en">Our Values</span>
+                            <span class="dropdown-text-ar">قيمنا</span>
+                        </a></li>
+                        <li><a href="about.html#team">
+                            <span class="dropdown-text-en">Our Team</span>
+                            <span class="dropdown-text-ar">فريقنا</span>
+                        </a></li>
+                        <li><a href="about.html#history">
+                            <span class="dropdown-text-en">Our History</span>
+                            <span class="dropdown-text-ar">تاريخنا</span>
+                        </a></li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown">
+                    <a href="activities.html" class="nav-link">
+                        <span class="nav-text-en">Activities</span>
+                        <span class="nav-text-ar">الأنشطة</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a href="activities.html#education">
+                            <span class="dropdown-text-en">Education</span>
+                            <span class="dropdown-text-ar">التعليم</span>
+                        </a></li>
+                        <li><a href="activities.html#healthcare">
+                            <span class="dropdown-text-en">Healthcare</span>
+                            <span class="dropdown-text-ar">الرعاية الصحية</span>
+                        </a></li>
+                        <li><a href="activities.html#community">
+                            <span class="dropdown-text-en">Community Development</span>
+                            <span class="dropdown-text-ar">تنمية المجتمع</span>
+                        </a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a href="videos.html" class="nav-link">
+                        <span class="nav-text-en">Videos</span>
+                        <span class="nav-text-ar">الفيديوهات</span>
+                    </a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a href="donate.html" class="nav-link">
+                        <span class="nav-text-en">Ways of Donation</span>
+                        <span class="nav-text-ar">طرق التبرع</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a href="donate.html#online">
+                            <span class="dropdown-text-en">Online Donation</span>
+                            <span class="dropdown-text-ar">التبرع الإلكتروني</span>
+                        </a></li>
+                        <li><a href="donate.html#bank">
+                            <span class="dropdown-text-en">Bank Transfer</span>
+                            <span class="dropdown-text-ar">التحويل البنكي</span>
+                        </a></li>
+                        <li><a href="donate.html#volunteer">
+                            <span class="dropdown-text-en">Volunteer</span>
+                            <span class="dropdown-text-ar">التطوع</span>
+                        </a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a href="contact.html" class="nav-link">
+                        <span class="nav-text-en">Contact Us</span>
+                        <span class="nav-text-ar">اتصل بنا</span>
+                    </a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title">
+                <span class="hero-text-en">Making a Difference Together</span>
+                <span class="hero-text-ar">نصنع الفرق معاً</span>
+            </h1>
+            <p class="hero-subtitle">
+                <span class="hero-text-en">Join us in our mission to create positive change in communities worldwide. Every donation, every volunteer hour, every act of kindness makes a real difference.</span>
+                <span class="hero-text-ar">انضم إلينا في مهمتنا لخلق تغيير إيجابي في المجتمعات حول العالم. كل تبرع، كل ساعة تطوع، كل عمل خير يحدث فرقاً حقيقياً.</span>
+            </p>
+            <div class="hero-buttons">
+                <a href="donate.html" class="btn btn-primary">
+                    <span class="btn-text-en">Donate Now</span>
+                    <span class="btn-text-ar">تبرع الآن</span>
+                </a>
+                <a href="donate.html#volunteer" class="btn btn-secondary">
+                    <span class="btn-text-en">Volunteer</span>
+                    <span class="btn-text-ar">تطوع</span>
+                </a>
+            </div>
+        </div>
+        <div class="hero-stats">
+            <div class="stat-item">
+                <div class="stat-number" data-target="50000">0</div>
+                <div class="stat-label">
+                    <span class="stat-text-en">Lives Impacted</span>
+                    <span class="stat-text-ar">حياة تأثرت</span>
+                </div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number" data-target="25">0</div>
+                <div class="stat-label">
+                    <span class="stat-text-en">Years of Service</span>
+                    <span class="stat-text-ar">سنوات الخدمة</span>
+                </div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number" data-target="1000">0</div>
+                <div class="stat-label">
+                    <span class="stat-text-en">Volunteers</span>
+                    <span class="stat-text-ar">متطوع</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header">
+                <h2>
+                    <span class="section-text-en">About Resalat Nour Association</span>
+                    <span class="section-text-ar">عن جمعية رسالة نور</span>
+                </h2>
+                <p>
+                    <span class="section-text-en">We believe in the power of community and the strength of human compassion</span>
+                    <span class="section-text-ar">نؤمن بقوة المجتمع وقوة التعاطف الإنساني</span>
+                </p>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <h3>
+                        <span class="about-text-en">Our Mission</span>
+                        <span class="about-text-ar">مهمتنا</span>
+                    </h3>
+                    <p>
+                        <span class="about-text-en">Resalat Nour Association is dedicated to creating sustainable positive change in communities around the world. We focus on education, healthcare, and community development to build a brighter future for all.</span>
+                        <span class="about-text-ar">جمعية رسالة نور مكرسة لخلق تغيير إيجابي مستدام في المجتمعات حول العالم. نركز على التعليم والرعاية الصحية وتنمية المجتمع لبناء مستقبل أفضل للجميع.</span>
+                    </p>
+                    
+                    <h3>
+                        <span class="about-text-en">Our Vision</span>
+                        <span class="about-text-ar">رؤيتنا</span>
+                    </h3>
+                    <p>
+                        <span class="about-text-en">A world where every individual has access to basic needs, education, and opportunities to thrive. We envision communities that are empowered, resilient, and full of hope.</span>
+                        <span class="about-text-ar">عالم يتمتع فيه كل فرد بإمكانية الوصول إلى الاحتياجات الأساسية والتعليم والفرص للازدهار. نتخيل مجتمعات قوية ومرنة ومليئة بالأمل.</span>
+                    </p>
+                    
+                    <div class="values">
+                        <div class="value-item">
+                            <i class="fas fa-hands-helping"></i>
+                            <h4>
+                                <span class="value-text-en">Compassion</span>
+                                <span class="value-text-ar">التعاطف</span>
+                            </h4>
+                            <p>
+                                <span class="value-text-en">We serve with empathy and understanding</span>
+                                <span class="value-text-ar">نخدم بالتعاطف والفهم</span>
+                            </p>
+                        </div>
+                        <div class="value-item">
+                            <i class="fas fa-shield-alt"></i>
+                            <h4>
+                                <span class="value-text-en">Integrity</span>
+                                <span class="value-text-ar">النزاهة</span>
+                            </h4>
+                            <p>
+                                <span class="value-text-en">We maintain the highest ethical standards</span>
+                                <span class="value-text-ar">نحافظ على أعلى المعايير الأخلاقية</span>
+                            </p>
+                        </div>
+                        <div class="value-item">
+                            <i class="fas fa-users"></i>
+                            <h4>
+                                <span class="value-text-en">Community</span>
+                                <span class="value-text-ar">المجتمع</span>
+                            </h4>
+                            <p>
+                                <span class="value-text-en">We believe in the power of togetherness</span>
+                                <span class="value-text-ar">نؤمن بقوة التضامن</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <div class="image-placeholder">
+                        <i class="fas fa-image"></i>
+                        <p>
+                            <span class="placeholder-text-en">Community Impact Image</span>
+                            <span class="placeholder-text-ar">صورة تأثير المجتمع</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Activities Section -->
+    <section id="activities" class="activities">
+        <div class="container">
+            <div class="section-header">
+                <h2>
+                    <span class="section-text-en">Our Activities</span>
+                    <span class="section-text-ar">أنشطتنا</span>
+                </h2>
+                <p>
+                    <span class="section-text-en">Support our key initiatives that are making a real difference</span>
+                    <span class="section-text-ar">ادعم مبادراتنا الرئيسية التي تحدث فرقاً حقيقياً</span>
+                </p>
+            </div>
+            <div class="activities-grid">
+                <div class="activity-card">
+                    <div class="activity-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <h3>
+                        <span class="activity-text-en">Education for All</span>
+                        <span class="activity-text-ar">التعليم للجميع</span>
+                    </h3>
+                    <p>
+                        <span class="activity-text-en">Providing quality education to children in underserved communities, building schools, and training teachers.</span>
+                        <span class="activity-text-ar">تقديم تعليم عالي الجودة للأطفال في المجتمعات المحرومة، وبناء المدارس، وتدريب المعلمين.</span>
+                    </p>
+                    <div class="activity-progress">
+                        <div class="progress-bar">
+                            <div class="progress-fill" style="width: 75%"></div>
+                        </div>
+                        <span class="progress-text">
+                            <span class="progress-text-en">75% Funded</span>
+                            <span class="progress-text-ar">75% ممول</span>
+                        </span>
+                    </div>
+                    <a href="donate.html" class="btn btn-outline">
+                        <span class="btn-text-en">Support This Activity</span>
+                        <span class="btn-text-ar">ادعم هذا النشاط</span>
+                    </a>
+                </div>
+                
+                <div class="activity-card">
+                    <div class="activity-icon">
+                        <i class="fas fa-medkit"></i>
+                    </div>
+                    <h3>
+                        <span class="activity-text-en">Healthcare Access</span>
+                        <span class="activity-text-ar">الوصول للرعاية الصحية</span>
+                    </h3>
+                    <p>
+                        <span class="activity-text-en">Building clinics, providing medical supplies, and training healthcare workers in remote areas.</span>
+                        <span class="activity-text-ar">بناء العيادات، وتوفير الإمدادات الطبية، وتدريب العاملين في مجال الرعاية الصحية في المناطق النائية.</span>
+                    </p>
+                    <div class="activity-progress">
+                        <div class="progress-bar">
+                            <div class="progress-fill" style="width: 60%"></div>
+                        </div>
+                        <span class="progress-text">
+                            <span class="progress-text-en">60% Funded</span>
+                            <span class="progress-text-ar">60% ممول</span>
+                        </span>
+                    </div>
+                    <a href="donate.html" class="btn btn-outline">
+                        <span class="btn-text-en">Support This Activity</span>
+                        <span class="btn-text-ar">ادعم هذا النشاط</span>
+                    </a>
+                </div>
+                
+                <div class="activity-card">
+                    <div class="activity-icon">
+                        <i class="fas fa-tint"></i>
+                    </div>
+                    <h3>
+                        <span class="activity-text-en">Clean Water</span>
+                        <span class="activity-text-ar">المياه النظيفة</span>
+                    </h3>
+                    <p>
+                        <span class="activity-text-en">Installing water wells and purification systems to provide clean drinking water to communities.</span>
+                        <span class="activity-text-ar">تركيب آبار المياه وأنظمة التنقية لتوفير مياه الشرب النظيفة للمجتمعات.</span>
+                    </p>
+                    <div class="activity-progress">
+                        <div class="progress-bar">
+                            <div class="progress-fill" style="width: 90%"></div>
+                        </div>
+                        <span class="progress-text">
+                            <span class="progress-text-en">90% Funded</span>
+                            <span class="progress-text-ar">90% ممول</span>
+                        </span>
+                    </div>
+                    <a href="donate.html" class="btn btn-outline">
+                        <span class="btn-text-en">Support This Activity</span>
+                        <span class="btn-text-ar">ادعم هذا النشاط</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Videos Section -->
+    <section id="videos" class="videos">
+        <div class="container">
+            <div class="section-header">
+                <h2>
+                    <span class="section-text-en">Our Videos</span>
+                    <span class="section-text-ar">فيديوهاتنا</span>
+                </h2>
+                <p>
+                    <span class="section-text-en">Watch our latest videos and see the impact of your support</span>
+                    <span class="section-text-ar">شاهد أحدث فيديوهاتنا وتأثير دعمك</span>
+                </p>
+            </div>
+            <div class="videos-grid">
+                <div class="video-card">
+                    <div class="video-placeholder">
+                        <i class="fas fa-play-circle"></i>
+                        <p>
+                            <span class="video-text-en">Latest Impact Video</span>
+                            <span class="video-text-ar">أحدث فيديو تأثير</span>
+                        </p>
+                    </div>
+                </div>
+                <div class="video-card">
+                    <div class="video-placeholder">
+                        <i class="fas fa-play-circle"></i>
+                        <p>
+                            <span class="video-text-en">Community Stories</span>
+                            <span class="video-text-ar">قصص المجتمع</span>
+                        </p>
+                    </div>
+                </div>
+                <div class="video-card">
+                    <div class="video-placeholder">
+                        <i class="fas fa-play-circle"></i>
+                        <p>
+                            <span class="video-text-en">Volunteer Stories</span>
+                            <span class="video-text-ar">قصص المتطوعين</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Donate Section -->
+    <section id="donate" class="donate">
+        <div class="container">
+            <div class="donate-content">
+                <div class="donate-text">
+                    <h2>
+                        <span class="donate-text-en">Make a Difference Today</span>
+                        <span class="donate-text-ar">اصنع فرقاً اليوم</span>
+                    </h2>
+                    <p>
+                        <span class="donate-text-en">Your donation can change lives. Every dollar counts and goes directly to our programs and initiatives.</span>
+                        <span class="donate-text-ar">تبرعك يمكن أن يغير حياة. كل دولار مهم ويذهب مباشرة إلى برامجنا ومبادراتنا.</span>
+                    </p>
+                    <div class="donation-options">
+                        <button class="donation-amount" data-amount="25">$25</button>
+                        <button class="donation-amount" data-amount="50">$50</button>
+                        <button class="donation-amount" data-amount="100">$100</button>
+                        <button class="donation-amount" data-amount="250">$250</button>
+                        <button class="donation-amount custom" data-amount="custom">
+                            <span class="custom-text-en">Custom</span>
+                            <span class="custom-text-ar">مخصص</span>
+                        </button>
+                    </div>
+                    <div class="custom-amount" style="display: none;">
+                        <input type="number" id="customAmount" placeholder="Enter amount" min="1">
+                    </div>
+                    <button class="btn btn-primary btn-large" id="donateBtn">
+                        <i class="fas fa-heart"></i>
+                        <span class="btn-text-en">Donate Now</span>
+                        <span class="btn-text-ar">تبرع الآن</span>
+                    </button>
+                </div>
+                <div class="donate-image">
+                    <div class="image-placeholder">
+                        <i class="fas fa-hands-helping"></i>
+                        <p>
+                            <span class="placeholder-text-en">Your Support Matters</span>
+                            <span class="placeholder-text-ar">دعمك مهم</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2>
+                    <span class="section-text-en">Get in Touch</span>
+                    <span class="section-text-ar">تواصل معنا</span>
+                </h2>
+                <p>
+                    <span class="section-text-en">We'd love to hear from you. Reach out to learn more about our work or how you can help.</span>
+                    <span class="section-text-ar">نود أن نسمع منك. تواصل معنا لمعرفة المزيد عن عملنا أو كيف يمكنك المساعدة.</span>
+                </p>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h4>
+                                <span class="contact-text-en">Address</span>
+                                <span class="contact-text-ar">العنوان</span>
+                            </h4>
+                            <p>
+                                <span class="contact-text-en">123 Hope Street<br>Community City, CC 12345</span>
+                                <span class="contact-text-ar">123 شارع الأمل<br>مدينة المجتمع، CC 12345</span>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h4>
+                                <span class="contact-text-en">Phone</span>
+                                <span class="contact-text-ar">الهاتف</span>
+                            </h4>
+                            <p>+1 (555) 123-4567</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h4>
+                                <span class="contact-text-en">Email</span>
+                                <span class="contact-text-ar">البريد الإلكتروني</span>
+                            </h4>
+                            <p>info@resalatnour.org</p>
+                        </div>
+                    </div>
+                    <div class="social-links">
+                        <a href="#" class="social-link" title="Facebook">
+                            <i class="fab fa-facebook"></i>
+                        </a>
+                        <a href="#" class="social-link" title="X (Twitter)">
+                            <i class="fab fa-x-twitter"></i>
+                        </a>
+                        <a href="#" class="social-link" title="Instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="social-link" title="YouTube">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                        <a href="mailto:info@resalatnour.org" class="social-link" title="Email">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                    </div>
+                </div>
+                <form class="contact-form">
+                    <div class="form-group">
+                        <input type="text" id="name" name="name" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" name="email" placeholder="Your Email" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" id="subject" name="subject" placeholder="Subject" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="message" name="message" placeholder="Your Message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">
+                        <span class="btn-text-en">Send Message</span>
+                        <span class="btn-text-ar">إرسال الرسالة</span>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <img src="assets/logo gan3ya.jpg" alt="Resalat Nour Association Logo">
+                        <div class="logo-text">
+                            <span class="org-name-en">Resalat Nour Association</span>
+                            <span class="org-name-ar">جمعية رسالة نور</span>
+                        </div>
+                    </div>
+                    <p>
+                        <span class="footer-text-en">Making a difference in communities worldwide through compassion, integrity, and community action.</span>
+                        <span class="footer-text-ar">نصنع فرقاً في المجتمعات حول العالم من خلال التعاطف والنزاهة والعمل المجتمعي.</span>
+                    </p>
+                </div>
+                <div class="footer-section">
+                    <h4>
+                        <span class="footer-text-en">Quick Links</span>
+                        <span class="footer-text-ar">روابط سريعة</span>
+                    </h4>
+                    <ul>
+                        <li><a href="about.html">
+                            <span class="footer-text-en">About Us</span>
+                            <span class="footer-text-ar">من نحن</span>
+                        </a></li>
+                        <li><a href="activities.html">
+                            <span class="footer-text-en">Activities</span>
+                            <span class="footer-text-ar">الأنشطة</span>
+                        </a></li>
+                        <li><a href="donate.html">
+                            <span class="footer-text-en">Donate</span>
+                            <span class="footer-text-ar">تبرع</span>
+                        </a></li>
+                        <li><a href="contact.html">
+                            <span class="footer-text-en">Contact</span>
+                            <span class="footer-text-ar">اتصل بنا</span>
+                        </a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>
+                        <span class="footer-text-en">Get Involved</span>
+                        <span class="footer-text-ar">انضم إلينا</span>
+                    </h4>
+                    <ul>
+                        <li><a href="donate.html">
+                            <span class="footer-text-en">Make a Donation</span>
+                            <span class="footer-text-ar">قدم تبرعاً</span>
+                        </a></li>
+                        <li><a href="donate.html#volunteer">
+                            <span class="footer-text-en">Become a Volunteer</span>
+                            <span class="footer-text-ar">كن متطوعاً</span>
+                        </a></li>
+                        <li><a href="contact.html">
+                            <span class="footer-text-en">Contact Us</span>
+                            <span class="footer-text-ar">اتصل بنا</span>
+                        </a></li>
+                        <li><a href="#newsletter">
+                            <span class="footer-text-en">Newsletter</span>
+                            <span class="footer-text-ar">النشرة الإخبارية</span>
+                        </a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>
+                        <span class="footer-text-en">Newsletter</span>
+                        <span class="footer-text-ar">النشرة الإخبارية</span>
+                    </h4>
+                    <p>
+                        <span class="footer-text-en">Stay updated with our latest news and impact stories.</span>
+                        <span class="footer-text-ar">ابق على اطلاع بآخر أخبارنا وقصص التأثير.</span>
+                    </p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Enter your email" required>
+                        <button type="submit" class="btn btn-primary">
+                            <span class="btn-text-en">Subscribe</span>
+                            <span class="btn-text-ar">اشترك</span>
+                        </button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>
+                    <span class="footer-text-en">&copy; 2024 Resalat Nour Association. All rights reserved.</span>
+                    <span class="footer-text-ar">&copy; 2024 جمعية رسالة نور. جميع الحقوق محفوظة.</span>
+                    | 
+                    <a href="#">
+                        <span class="footer-text-en">Privacy Policy</span>
+                        <span class="footer-text-ar">سياسة الخصوصية</span>
+                    </a> 
+                    | 
+                    <a href="#">
+                        <span class="footer-text-en">Terms of Service</span>
+                        <span class="footer-text-ar">شروط الخدمة</span>
+                    </a>
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

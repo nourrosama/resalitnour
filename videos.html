@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>الفيديوهات - Videos | جمعية رسالة نور</title>
+    <meta name="description" content="Watch our latest videos and impact stories at Resalat Nour Association. Filter by date to find specific videos and initiatives.">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Cairo:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Language Toggle -->
+    <div class="language-toggle">
+        <button id="langToggle" class="lang-btn">
+            <i class="fas fa-globe"></i>
+            <span class="lang-text" data-en="EN" data-ar="عربي">EN</span>
+        </button>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <!-- Replace this in all HTML files -->
+                <div class="logo-placeholder">
+                    <img src="assets/logo_gam3ya.jpg" alt="Resalat Nour Association Logo" class="logo-img">
+                </div>
+                </div>
+                <div class="logo-text">
+                    <span class="org-name-en">Resalat Nour Association</span>
+                    <span class="org-name-ar">جمعية رسالة نور</span>
+                </div>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">
+                        <span class="nav-text-en">Home</span>
+                        <span class="nav-text-ar">الرئيسية</span>
+                    </a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a href="about.html" class="nav-link">
+                        <span class="nav-text-en">About Us</span>
+                        <span class="nav-text-ar">من نحن</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a href="about.html#mission">
+                            <span class="dropdown-text-en">Our Mission</span>
+                            <span class="dropdown-text-ar">مهمتنا</span>
+                        </a></li>
+                        <li><a href="about.html#vision">
+                            <span class="dropdown-text-en">Our Vision</span>
+                            <span class="dropdown-text-ar">رؤيتنا</span>
+                        </a></li>
+                        <li><a href="about.html#values">
+                            <span class="dropdown-text-en">Our Values</span>
+                            <span class="dropdown-text-ar">قيمنا</span>
+                        </a></li>
+                        <li><a href="about.html#team">
+                            <span class="dropdown-text-en">Our Team</span>
+                            <span class="dropdown-text-ar">فريقنا</span>
+                        </a></li>
+                        <li><a href="about.html#history">
+                            <span class="dropdown-text-en">Our History</span>
+                            <span class="dropdown-text-ar">تاريخنا</span>
+                        </a></li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown">
+                    <a href="activities.html" class="nav-link">
+                        <span class="nav-text-en">Activities</span>
+                        <span class="nav-text-ar">الأنشطة</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a href="activities.html#education">
+                            <span class="dropdown-text-en">Education</span>
+                            <span class="dropdown-text-ar">التعليم</span>
+                        </a></li>
+                        <li><a href="activities.html#healthcare">
+                            <span class="dropdown-text-en">Healthcare</span>
+                            <span class="dropdown-text-ar">الرعاية الصحية</span>
+                        </a></li>
+                        <li><a href="activities.html#community">
+                            <span class="dropdown-text-en">Community Development</span>
+                            <span class="dropdown-text-ar">تنمية المجتمع</span>
+                        </a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a href="videos.html" class="nav-link active">
+                        <span class="nav-text-en">Videos</span>
+                        <span class="nav-text-ar">الفيديوهات</span>
+                    </a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a href="donate.html" class="nav-link">
+                        <span class="nav-text-en">Ways of Donation</span>
+                        <span class="nav-text-ar">طرق التبرع</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a href="donate.html#online">
+                            <span class="dropdown-text-en">Online Donation</span>
+                            <span class="dropdown-text-ar">التبرع الإلكتروني</span>
+                        </a></li>
+                        <li><a href="donate.html#bank">
+                            <span class="dropdown-text-en">Bank Transfer</span>
+                            <span class="dropdown-text-ar">التحويل البنكي</span>
+                        </a></li>
+                        <li><a href="donate.html#volunteer">
+                            <span class="dropdown-text-en">Volunteer</span>
+                            <span class="dropdown-text-ar">التطوع</span>
+                        </a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a href="contact.html" class="nav-link">
+                        <span class="nav-text-en">Contact Us</span>
+                        <span class="nav-text-ar">اتصل بنا</span>
+                    </a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>
+                <span class="page-title-en">Videos & Impact Stories</span>
+                <span class="page-title-ar">الفيديوهات وقصص التأثير</span>
+            </h1>
+            <p>
+                <span class="page-subtitle-en">Watch our latest videos and see the real impact of your support in communities worldwide</span>
+                <span class="page-subtitle-ar">شاهد أحدث فيديوهاتنا وتأثير دعمك الحقيقي في المجتمعات حول العالم</span>
+            </p>
+        </div>
+    </section>
+
+    <!-- Filter Section -->
+    <section class="filter-section">
+        <div class="container">
+            <div class="filter-container">
+                <div class="filter-group">
+                    <label>
+                        <span class="filter-label-en">Month</span>
+                        <span class="filter-label-ar">شهر</span>
+                    </label>
+                    <select id="monthFilter" class="filter-select">
+                        <option value="all">
+                            <span class="filter-option-en">All</span>
+                            <span class="filter-option-ar">الكل</span>
+                        </option>
+                        <option value="1">
+                            <span class="filter-option-en">January</span>
+                            <span class="filter-option-ar">يناير</span>
+                        </option>
+                        <option value="2">
+                            <span class="filter-option-en">February</span>
+                            <span class="filter-option-ar">فبراير</span>
+                        </option>
+                        <option value="3">
+                            <span class="filter-option-en">March</span>
+                            <span class="filter-option-ar">مارس</span>
+                        </option>
+                        <option value="4">
+                            <span class="filter-option-en">April</span>
+                            <span class="filter-option-ar">أبريل</span>
+                        </option>
+                        <option value="5">
+                            <span class="filter-option-en">May</span>
+                            <span class="filter-option-ar">مايو</span>
+                        </option>
+                        <option value="6">
+                            <span class="filter-option-en">June</span>
+                            <span class="filter-option-ar">يونيو</span>
+                        </option>
+                        <option value="7">
+                            <span class="filter-option-en">July</span>
+                            <span class="filter-option-ar">يوليو</span>
+                        </option>
+                        <option value="8">
+                            <span class="filter-option-en">August</span>
+                            <span class="filter-option-ar">أغسطس</span>
+                        </option>
+                        <option value="9">
+                            <span class="filter-option-en">September</span>
+                            <span class="filter-option-ar">سبتمبر</span>
+                        </option>
+                        <option value="10">
+                            <span class="filter-option-en">October</span>
+                            <span class="filter-option-ar">أكتوبر</span>
+                        </option>
+                        <option value="11">
+                            <span class="filter-option-en">November</span>
+                            <span class="filter-option-ar">نوفمبر</span>
+                        </option>
+                        <option value="12">
+                            <span class="filter-option-en">December</span>
+                            <span class="filter-option-ar">ديسمبر</span>
+                        </option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label>
+                        <span class="filter-label-en">Year</span>
+                        <span class="filter-label-ar">سنة</span>
+                    </label>
+                    <select id="yearFilter" class="filter-select">
+                        <option value="all">
+                            <span class="filter-option-en">All</span>
+                            <span class="filter-option-ar">الكل</span>
+                        </option>
+                        <option value="2024">2024</option>
+                        <option value="2023">2023</option>
+                        <option value="2022">2022</option>
+                        <option value="2021">2021</option>
+                        <option value="2020">2020</option>
+                    </select>
+                </div>
+                <button id="searchBtn" class="search-btn">
+                    <span class="search-text-en">Search</span>
+                    <span class="search-text-ar">بحث</span>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Videos Grid -->
+    <section class="videos-content">
+        <div class="container">
+            <div id="videosGrid" class="videos-grid">
+                <!-- Video cards will be populated by JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <div class="logo-placeholder">
+                            <i class="fas fa-mosque"></i>
+                        </div>
+                        <div class="logo-text">
+                            <span class="org-name-en">Resalat Nour Association</span>
+                            <span class="org-name-ar">جمعية رسالة نور</span>
+                        </div>
+                    </div>
+                    <p>
+                        <span class="footer-text-en">Making a difference in communities worldwide through compassion, integrity, and community action.</span>
+                        <span class="footer-text-ar">نصنع فرقاً في المجتمعات حول العالم من خلال التعاطف والنزاهة والعمل المجتمعي.</span>
+                    </p>
+                </div>
+                <div class="footer-section">
+                    <h4>
+                        <span class="footer-text-en">Quick Links</span>
+                        <span class="footer-text-ar">روابط سريعة</span>
+                    </h4>
+                    <ul>
+                        <li><a href="about.html">
+                            <span class="footer-text-en">About Us</span>
+                            <span class="footer-text-ar">من نحن</span>
+                        </a></li>
+                        <li><a href="activities.html">
+                            <span class="footer-text-en">Activities</span>
+                            <span class="footer-text-ar">الأنشطة</span>
+                        </a></li>
+                        <li><a href="donate.html">
+                            <span class="footer-text-en">Donate</span>
+                            <span class="footer-text-ar">تبرع</span>
+                        </a></li>
+                        <li><a href="contact.html">
+                            <span class="footer-text-en">Contact</span>
+                            <span class="footer-text-ar">اتصل بنا</span>
+                        </a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>
+                        <span class="footer-text-en">Get Involved</span>
+                        <span class="footer-text-ar">انضم إلينا</span>
+                    </h4>
+                    <ul>
+                        <li><a href="donate.html">
+                            <span class="footer-text-en">Make a Donation</span>
+                            <span class="footer-text-ar">قدم تبرعاً</span>
+                        </a></li>
+                        <li><a href="donate.html#volunteer">
+                            <span class="footer-text-en">Become a Volunteer</span>
+                            <span class="footer-text-ar">كن متطوعاً</span>
+                        </a></li>
+                        <li><a href="contact.html">
+                            <span class="footer-text-en">Contact Us</span>
+                            <span class="footer-text-ar">اتصل بنا</span>
+                        </a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>
+                        <span class="footer-text-en">Newsletter</span>
+                        <span class="footer-text-ar">النشرة الإخبارية</span>
+                    </h4>
+                    <p>
+                        <span class="footer-text-en">Stay updated with our latest news and impact stories.</span>
+                        <span class="footer-text-ar">ابق على اطلاع بآخر أخبارنا وقصص التأثير.</span>
+                    </p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Enter your email" required>
+                        <button type="submit" class="btn btn-primary">
+                            <span class="btn-text-en">Subscribe</span>
+                            <span class="btn-text-ar">اشترك</span>
+                        </button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>
+                    <span class="footer-text-en">&copy; 2024 Resalat Nour Association. All rights reserved.</span>
+                    <span class="footer-text-ar">&copy; 2024 جمعية رسالة نور. جميع الحقوق محفوظة.</span>
+                    | 
+                    <a href="#">
+                        <span class="footer-text-en">Privacy Policy</span>
+                        <span class="footer-text-ar">سياسة الخصوصية</span>
+                    </a> 
+                    | 
+                    <a href="#">
+                        <span class="footer-text-en">Terms of Service</span>
+                        <span class="footer-text-ar">شروط الخدمة</span>
+                    </a>
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="videos.js"></script>
+</body>
+</html>
