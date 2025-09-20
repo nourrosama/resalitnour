@@ -432,11 +432,11 @@ fadeInElements.forEach(element => {
 
 // Social media links configuration
 const socialLinks = {
-    facebook: 'https://facebook.com/resalatnour',
-    twitter: 'https://twitter.com/resalatnour',
-    instagram: 'https://instagram.com/resalatnour',
-    youtube: 'https://youtube.com/resalatnour',
-    email: 'mailto:info@resalatnour.org'
+    facebook: 'https://www.facebook.com/Resalitnour2021',
+    twitter: 'https://x.com/resalitnour',
+    instagram: 'https://www.instagram.com/resalitnour/',
+    youtube: 'https://www.youtube.com/@%D8%AC%D9%85%D8%B9%D9%8A%D8%A9%D8%B1%D8%B3%D8%A7%D9%84%D8%A9%D9%86%D9%88%D8%B1%D9%84%D9%84%D8%AA%D9%86%D9%85%D9%8A%D8%A9',
+    email: 'mailto:resalitnour2021@gmail.com'
 };
 
 // Update social media links
