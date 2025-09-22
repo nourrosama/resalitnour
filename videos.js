@@ -3,18 +3,18 @@ const videosData = [
     {
         id: 1,
         title: {
-            en: "Education Impact Story",
-            ar: "قصة تأثير التعليم"
+            en: "المقر الجديد",
+            ar: "المقر الجديد"
         },
         description: {
-            en: "See how our education programs are transforming lives in rural communities. Watch the journey of students who now have access to quality education.",
-            ar: "شاهد كيف تحول برامجنا التعليمية حياة الناس في المجتمعات الريفية. تابع رحلة الطلاب الذين أصبح لديهم الآن إمكانية الوصول للتعليم الجيد."
+            en: "فيديو ترحيبي بالمقر الجديد 2021",
+            ar: "فيديو ترحيبي بالمقر الجديد 2021"
         },
-        category: "education",
-        date: "2024-03-10",
-        duration: "5:32",
-        thumbnail: "education-video.jpg",
-        views: 1250
+        category: "community",
+        date: "2021",
+        duration: "2:18",
+        thumbnail: "assets/thumbnails/welcome.jpg.png",
+        videoUrl: "https://www.youtube.com/embed/okBlAZpvFjI?si=kZWfcIcGXTJwRQyd"
     },
     {
         id: 2,
@@ -97,9 +97,8 @@ const videosData = [
         views: 4200
     }
 ];
-
-// Current language state
-let currentLang = 'en';
+// Current language state for videos
+let videosCurrentLang = 'en';
 
 // Filter elements
 const monthFilter = document.getElementById('monthFilter');
@@ -112,9 +111,9 @@ document.addEventListener('DOMContentLoaded', () => {
     // Load saved language preference
     const savedLang = localStorage.getItem('preferredLanguage');
     if (savedLang) {
-        currentLang = savedLang;
-        document.body.setAttribute('lang', currentLang);
-        document.documentElement.setAttribute('lang', currentLang);
+        videosCurrentLang = savedLang;
+        document.body.setAttribute('lang', videosCurrentLang);
+        document.documentElement.setAttribute('lang', videosCurrentLang);
     }
     
     // Display all videos initially
@@ -164,6 +163,10 @@ function filterVideos() {
 function displayVideos(videos) {
     videosGrid.innerHTML = '';
     
+    if (!videos || videos.length === 0) {
+        return;
+    }
+    
     videos.forEach(video => {
         const videoCard = createVideoCard(video);
         videosGrid.appendChild(videoCard);
@@ -176,7 +179,7 @@ function createVideoCard(video) {
     card.className = 'video-card';
     
     const date = new Date(video.date);
-    const formattedDate = date.toLocaleDateString(currentLang === 'ar' ? 'ar-SA' : 'en-US', {
+    const formattedDate = date.toLocaleDateString(videosCurrentLang === 'ar' ? 'ar-SA' : 'en-US', {
         year: 'numeric',
         month: 'long',
         day: 'numeric'
@@ -184,38 +187,24 @@ function createVideoCard(video) {
     
     card.innerHTML = `
         <div class="video-thumbnail">
-            <div class="thumbnail-placeholder">
+            <img src="${video.thumbnail}" alt="${video.title[videosCurrentLang]}" class="video-thumbnail-img" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+            <div class="thumbnail-placeholder" style="display: none;">
                 <i class="fas fa-play-circle"></i>
-                <div class="video-overlay">
-                    <div class="play-button">
-                        <i class="fas fa-play"></i>
-                    </div>
-                    <div class="video-duration">${video.duration}</div>
+            </div>
+            <div class="video-overlay">
+                <div class="play-button">
+                    <i class="fas fa-play"></i>
                 </div>
+                <div class="video-duration">${video.duration}</div>
             </div>
         </div>
         <div class="video-content">
+            <h3>${video.title[videosCurrentLang]}</h3>
+            <p>${video.description[videosCurrentLang]}</p>
             <div class="video-date">
                 <i class="fas fa-calendar"></i>
                 <span>${formattedDate}</span>
             </div>
-            <h3>${video.title[currentLang]}</h3>
-            <p>${video.description[currentLang]}</p>
-            <div class="video-stats">
-                <span class="video-views">
-                    <i class="fas fa-eye"></i>
-                    <span class="views-text-en">${video.views} views</span>
-                    <span class="views-text-ar">${video.views} مشاهدة</span>
-                </span>
-                <span class="video-duration-text">
-                    <i class="fas fa-clock"></i>
-                    <span>${video.duration}</span>
-                </span>
-            </div>
-            <button class="btn btn-outline video-btn">
-                <span class="btn-text-en">Watch Video</span>
-                <span class="btn-text-ar">شاهد الفيديو</span>
-            </button>
         </div>
     `;
     
@@ -233,29 +222,27 @@ function showVideoDetails(video) {
     modal.className = 'modal-overlay';
     
     const date = new Date(video.date);
-    const formattedDate = date.toLocaleDateString(currentLang === 'ar' ? 'ar-SA' : 'en-US', {
+    const formattedDate = date.toLocaleDateString(videosCurrentLang === 'ar' ? 'ar-SA' : 'en-US', {
         year: 'numeric',
         month: 'long',
         day: 'numeric'
     });
     
     modal.innerHTML = `
-        <div class="modal-content" style="direction: ${currentLang === 'ar' ? 'rtl' : 'ltr'}; font-family: ${currentLang === 'ar' ? 'Cairo, sans-serif' : 'Inter, sans-serif'};">
+        <div class="modal-content" style="direction: ${videosCurrentLang === 'ar' ? 'rtl' : 'ltr'}; font-family: ${videosCurrentLang === 'ar' ? 'Cairo, sans-serif' : 'Inter, sans-serif'};">
             <div class="modal-header">
-                <h2>${video.title[currentLang]}</h2>
+                <h2>${video.title[videosCurrentLang]}</h2>
                 <button class="modal-close" onclick="this.closest('.modal-overlay').remove()">
                     <i class="fas fa-times"></i>
                 </button>
             </div>
             <div class="modal-body">
                 <div class="video-player">
-                    <div class="video-placeholder-large">
-                        <i class="fas fa-play-circle"></i>
-                        <p>${video.title[currentLang]}</p>
-                        <div class="play-button-large">
-                            <i class="fas fa-play"></i>
-                        </div>
-                    </div>
+                    <video id="modalVideo" class="video-player-element" controls preload="metadata" poster="${video.thumbnail}">
+                        <source src="${video.videoUrl}" type="video/mp4">
+                        <span class="video-text-en">Your browser does not support the video tag.</span>
+                        <span class="video-text-ar">متصفحك لا يدعم تشغيل الفيديو.</span>
+                    </video>
                 </div>
                 <div class="video-detail-info">
                     <div class="detail-item">
@@ -267,10 +254,6 @@ function showVideoDetails(video) {
                         <span>${video.category}</span>
                     </div>
                     <div class="detail-item">
-                        <i class="fas fa-eye"></i>
-                        <span>${video.views} views</span>
-                    </div>
-                    <div class="detail-item">
                         <i class="fas fa-clock"></i>
                         <span>${video.duration}</span>
                     </div>
@@ -280,7 +263,7 @@ function showVideoDetails(video) {
                         <span class="detail-title-en">Description</span>
                         <span class="detail-title-ar">الوصف</span>
                     </h3>
-                    <p>${video.description[currentLang]}</p>
+                    <p>${video.description[videosCurrentLang]}</p>
                 </div>
                 <div class="video-actions">
                     <button class="btn btn-primary">
@@ -306,9 +289,35 @@ function showVideoDetails(video) {
     
     document.body.appendChild(modal);
     
+    // Get the video element
+    const videoElement = modal.querySelector('#modalVideo');
+    
     // Close modal when clicking outside
     modal.addEventListener('click', (e) => {
         if (e.target === modal) {
+            // Pause video before closing
+            if (videoElement) {
+                videoElement.pause();
+            }
+            modal.remove();
+        }
+    });
+    
+    // Close modal when clicking close button
+    const closeButton = modal.querySelector('.modal-close');
+    closeButton.addEventListener('click', () => {
+        if (videoElement) {
+            videoElement.pause();
+        }
+        modal.remove();
+    });
+    
+    // Pause video when modal is closed via ESC key
+    document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape' && modal.parentNode) {
+            if (videoElement) {
+                videoElement.pause();
+            }
             modal.remove();
         }
     });
@@ -348,6 +357,7 @@ function resetFilters() {
 
 // Listen for language changes from the main script
 window.addEventListener('languageChanged', (e) => {
-    currentLang = e.detail.language;
+    videosCurrentLang = e.detail.language;
     displayVideos(videosData);
 });
+
