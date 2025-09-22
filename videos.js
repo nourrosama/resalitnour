@@ -12,89 +12,201 @@ const videosData = [
         },
         category: "community",
         date: "2021",
-        duration: "2:18",
+        duration: "2:20",
         thumbnail: "assets/thumbnails/welcome.jpg.png",
         videoUrl: "https://www.youtube.com/embed/okBlAZpvFjI?si=kZWfcIcGXTJwRQyd"
     },
     {
         id: 2,
         title: {
-            en: "Healthcare Mission Success",
-            ar: "نجاح مهمة الرعاية الصحية"
+            en: "2021-02-06 إطعام",
+            ar: "2021-02-06 إطعام"
         },
         description: {
-            en: "Our medical team's journey to remote villages, providing essential healthcare services and training local healthcare workers.",
-            ar: "رحلة فريقنا الطبي إلى القرى النائية، وتقديم خدمات الرعاية الصحية الأساسية وتدريب العاملين المحليين في مجال الرعاية الصحية."
+            en: "2021-02-06 إطعام",
+            ar: "2021-02-06 إطعام"
         },
-        category: "healthcare",
-        date: "2024-02-15",
-        duration: "8:45",
-        thumbnail: "healthcare-video.jpg",
-        views: 2100
+        category: "community",
+        date: "2021-02-06",
+        duration: "1:22",
+        thumbnail: "assets/thumbnails/6feb21.jpg.jpg",
+        videoUrl: "https://www.youtube.com/embed/Kbq-B_BftkM?si=sIzCn_KGmCzpxLFp"
     },
     {
         id: 3,
         title: {
-            en: "Clean Water Project Documentary",
-            ar: "فيلم وثائقي عن مشروع المياه النظيفة"
+            en: "2021-03-13 إطعام",
+            ar: "2021-03-13 إطعام"
         },
         description: {
-            en: "A comprehensive look at our clean water initiative, from planning to implementation and the positive impact on community health.",
-            ar: "نظرة شاملة على مبادرة المياه النظيفة، من التخطيط إلى التنفيذ والتأثير الإيجابي على صحة المجتمع."
+            en: "2021-03-13 إطعام",
+            ar: "2021-03-13 إطعام"
         },
         category: "community",
-        date: "2024-01-20",
-        duration: "12:18",
-        thumbnail: "water-video.jpg",
-        views: 3400
+        date: "2021-03-13",
+        duration: "1:42",
+        thumbnail: "assets/thumbnails/mar22.jpg.png",
+        videoUrl: "https://www.youtube.com/embed/SchXzph5n-g?si=xA3erAmQObwj7g5C"
     },
     {
         id: 4,
         title: {
-            en: "Volunteer Stories",
-            ar: "قصص المتطوعين"
+            en: "2021-04-07 مساعدات غذائيه شهر رمضان",
+            ar: "2021-04-07 مساعدات غذائيه شهر رمضان"
         },
         description: {
-            en: "Heartwarming stories from our dedicated volunteers who are making a difference in communities around the world.",
-            ar: "قصص مؤثرة من متطوعينا المتفانين الذين يصنعون فرقاً في المجتمعات حول العالم."
+            en: "2021-04-07 مساعدات غذائيه شهر رمضان",
+            ar: "2021-04-07 مساعدات غذائيه شهر رمضان"
         },
         category: "community",
-        date: "2023-12-08",
-        duration: "6:55",
-        thumbnail: "volunteer-video.jpg",
-        views: 1800
+        date: "2021-04-07",
+        duration: "0:16",
+        thumbnail: "assets/thumbnails/mar22.jpg.png",
+        videoUrl: "https://www.youtube.com/embed/B0LU92Vrrao?si=DIlpJZlDwig_si9B"
     },
     {
         id: 5,
         title: {
-            en: "Youth Leadership Program",
-            ar: "برنامج قيادة الشباب"
+            en: "2021-04-20 بوستر معرض خيري توزيع الملابس في رمضان",
+            ar: "2021-04-20 بوستر معرض خيري توزيع الملابس في رمضان"
         },
         description: {
-            en: "Young leaders share their experiences and how the program has empowered them to create positive change in their communities.",
-            ar: "يشارك القادة الشباب تجاربهم وكيف مكنهم البرنامج من خلق تغيير إيجابي في مجتمعاتهم."
+            en: "2021-04-20 بوستر معرض خيري توزيع الملابس في رمضان",
+            ar: "2021-04-20 بوستر معرض خيري توزيع الملابس في رمضان"
         },
-        category: "education",
-        date: "2023-11-25",
-        duration: "9:12",
-        thumbnail: "youth-video.jpg",
-        views: 950
+        category: "community",
+        date: "2021-04-16",
+        duration: "2:05",
+        thumbnail: "assets/thumbnails/mar22.jpg.png",
+        videoUrl: "https://www.youtube.com/embed/YQDY8Kyvzl4?si=1gbT1WuubLIT2XGI"
     },
     {
         id: 6,
         title: {
-            en: "Annual Impact Report 2023",
-            ar: "تقرير التأثير السنوي 2023"
+            en: "جمعية رسالة نور للتنمية 2021-04-20 معرض خيري توزيع الملابس  في رمضان",
+            ar: "جمعية رسالة نور للتنمية 2021-04-20 معرض خيري توزيع الملابس  في رمضان"
         },
         description: {
-            en: "A comprehensive overview of our achievements, impact metrics, and the lives we've touched throughout 2023.",
-            ar: "نظرة شاملة على إنجازاتنا ومقاييس التأثير والأرواح التي تأثرت طوال عام 2023."
+            en: "جمعية رسالة نور للتنمية 2021-04-20 معرض خيري توزيع الملابس  في رمضان",
+            ar: "جمعية رسالة نور للتنمية 2021-04-20 معرض خيري توزيع الملابس  في رمضان"
         },
         category: "community",
-        date: "2023-10-30",
-        duration: "15:30",
-        thumbnail: "annual-report-video.jpg",
-        views: 4200
+        date: "2021-04-20",
+        duration: "2:33",
+        thumbnail: "assets/thumbnails/mar22.jpg.png",
+        videoUrl: "https://www.youtube.com/embed/sZFUX5HbbQA?si=VKF3M1zw0CEHYFXj"
+    },
+    {
+        id: 7,
+        title: {
+            en: "إطعام جمعية رسالة نور للتنمية بتاريخ 30-08-2021",
+            ar: "إطعام جمعية رسالة نور للتنمية بتاريخ 30-08-2021"
+        },
+        description: {
+            en: "إطعام جمعية رسالة نور للتنمية بتاريخ 30-08-2021",
+            ar: "إطعام جمعية رسالة نور للتنمية بتاريخ 30-08-2021"
+        },
+        category: "community",
+        date: "2021-08-30",
+        duration: "1:35",
+        thumbnail: "assets/thumbnails/mar22.jpg.png",
+        videoUrl: "https://www.youtube.com/embed/jF-agToa5Y8?si=wyqtCgLYpXDYnBZC"
+    },
+    {
+        id: 8,
+        title: {
+            en: "إطعام 1-12-2021 لعمل 150 وجبة",
+            ar: "إطعام 1-12-2021 لعمل 150 وجبة"
+        },
+        description: {
+            en: "إطعام 1-12-2021 لعمل 150 وجبة",
+            ar: "إطعام 1-12-2021 لعمل 150 وجبة"
+        },
+        category: "community",
+        date: "2021-12-01",
+        duration: "1:30",
+        thumbnail: "assets/thumbnails/mar22.jpg.png",
+        videoUrl: "https://www.youtube.com/embed/h9MbCtqCsxc?si=lNTAdPgqHepP5wKe"
+    },
+    {
+        id: 9,
+        title: {
+            en: "فيديو نقل المقر الجديد",
+            ar: "فيديو نقل المقر الجديد"
+        },
+        description: {
+            en: "فيديو نقل المقر الجديد",
+            ar: "فيديو نقل المقر الجديد"
+        },
+        category: "community",
+        date: "2021-12-16",
+        duration: "2:21",
+        thumbnail: "assets/thumbnails/mar22.jpg.png",
+        videoUrl: "ahttps://www.youtube.com/embed/okBlAZpvFjI?si=SIxDi5WldRwtt15B"
+    },
+    {
+        id: 10,
+        title: {
+            en: "إطعام اليوم 25ديسمبر 140 وجبة",
+            ar: "إطعام اليوم 25ديسمبر 140 وجبة"
+        },
+        description: {
+            en: "إطعام اليوم 25ديسمبر 140 وجبة",
+            ar: "إطعام اليوم 25ديسمبر 140 وجبة"
+        },
+        category: "community",
+        date: "2021-12-25",
+        duration: "1:02",
+        thumbnail: "assets/thumbnails/mar22.jpg.png",
+        videoUrl: "https://www.youtube.com/embed/TM5a7nHWq8M?si=H2H1SEaCO_Pm6gbL"
+    },
+    {
+        id: 11,
+        title: {
+            en: "إطعام 29-12-2021 لعمل 435 وجبة",
+            ar: "إطعام 29-12-2021 لعمل 435 وجبة"
+        },
+        description: {
+            en: "إطعام 29-12-2021 لعمل 435 وجبة",
+            ar: "إطعام 29-12-2021 لعمل 435 وجبة"
+        },
+        category: "community",
+        date: "2021-12-29",
+        duration: "3:14",
+        thumbnail: "assets/thumbnails/mar22.jpg.png",
+        videoUrl: "https://www.youtube.com/embed/lgfSB3C5GpI?si=Nh0N5ocW1200Wckw"
+    },
+    {
+        id: 12,
+        title: {
+            en: "14-2-2022 إطعام 166 وجبه",
+            ar: "14-2-2022 إطعام 166 وجبه"
+        },
+        description: {
+            en: "14-2-2022 إطعام 166 وجبه",
+            ar: "14-2-2022 إطعام 166 وجبه"
+        },
+        category: "community",
+        date: "2022-02-14",
+        duration: "1:50",
+        thumbnail: "assets/thumbnails/mar22.jpg.png",
+        videoUrl: "https://www.youtube.com/embed/792Mv44YsF0?si=F7dea8KtPl93i_zV"
+    },
+    {
+        id: 13,
+        title: {
+            en: "10-03-2022إطعام جمعية رسالة نور للتنمية",
+            ar: "10-03-2022إطعام جمعية رسالة نور للتنمية"
+        },
+        description: {
+            en: "10-03-2022إطعام جمعية رسالة نور للتنمية",
+            ar: "10-03-2022إطعام جمعية رسالة نور للتنمية"
+        },
+        category: "community",
+        date: "2022-03-10",
+        duration: "1:02",
+        thumbnail: "assets/thumbnails/mar22.jpg.png",
+        videoUrl: "https://www.youtube.com/embed/x6qXhE0j63Q?si=fMQMuq5ZVMQozIZ8"
     }
 ];
 // Current language state for videos
@@ -208,9 +320,31 @@ function createVideoCard(video) {
         </div>
     `;
     
-    // Add click event to the card
+    // Add click event to the card: ALWAYS open in a new tab
     card.addEventListener('click', () => {
-        showVideoDetails(video);
+        const url = video.videoUrl;
+        if (!url) {
+            alert(videosCurrentLang === 'en' ? 'No video link available.' : 'لا يتوفر رابط فيديو.');
+            return;
+        }
+
+        let targetUrl = url;
+        // Convert YouTube embed or short URLs to standard watch URL when possible
+        if (url.includes('youtube.com') || url.includes('youtu.be')) {
+            if (url.includes('/embed/')) {
+                const afterEmbed = url.split('/embed/')[1] || '';
+                const videoId = afterEmbed.split('?')[0];
+                if (videoId) {
+                    targetUrl = `https://www.youtube.com/watch?v=${videoId}`;
+                }
+            } else if (url.includes('youtu.be/')) {
+                const videoId = url.split('youtu.be/')[1]?.split('?')[0];
+                if (videoId) {
+                    targetUrl = `https://www.youtube.com/watch?v=${videoId}`;
+                }
+            }
+        }
+        window.open(targetUrl, '_blank', 'noopener');
     });
     
     return card;
