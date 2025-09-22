@@ -29,7 +29,7 @@ const videosData = [
         category: "community",
         date: "2021-02-06",
         duration: "1:22",
-        thumbnail: "assets/thumbnails/6feb21.jpg.jpg",
+        thumbnail: "assets/thumbnails/mar22.jpg.png",
         videoUrl: "https://www.youtube.com/embed/Kbq-B_BftkM?si=sIzCn_KGmCzpxLFp"
     },
     {
