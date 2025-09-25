@@ -68,26 +68,11 @@
                         </a></li>
                     </ul>
                 </li>
-                <li class="nav-item dropdown">
+                <li class="nav-item">
                     <a href="activities.html" class="nav-link active">
                         <span class="nav-text-en">Activities</span>
                         <span class="nav-text-ar">الأنشطة</span>
-                        <i class="fas fa-chevron-down"></i>
                     </a>
-                    <ul class="dropdown-menu">
-                        <li><a href="activities.html#education">
-                            <span class="dropdown-text-en">Education</span>
-                            <span class="dropdown-text-ar">التعليم</span>
-                        </a></li>
-                        <li><a href="activities.html#healthcare">
-                            <span class="dropdown-text-en">Healthcare</span>
-                            <span class="dropdown-text-ar">الرعاية الصحية</span>
-                        </a></li>
-                        <li><a href="activities.html#community">
-                            <span class="dropdown-text-en">Community Development</span>
-                            <span class="dropdown-text-ar">تنمية المجتمع</span>
-                        </a></li>
-                    </ul>
                 </li>
                 <li class="nav-item">
                     <a href="videos.html" class="nav-link">
@@ -131,114 +116,49 @@
         </div>
     </nav>
 
-    <!-- Page Header -->
-    <section class="page-header">
-        <div class="container">
-            <h1>
-                <span class="page-title-en">Activities & Events</span>
-                <span class="page-title-ar">الأنشطة والفعاليات</span>
-            </h1>
-            <p>
-                <span class="page-subtitle-en">Explore our latest activities, events, and community initiatives</span>
-                <span class="page-subtitle-ar">استكشف أحدث أنشطتنا وفعالياتنا ومبادراتنا المجتمعية</span>
-            </p>
-        </div>
-    </section>
-
-    <!-- Filter Section -->
-    <section class="filter-section">
-        <div class="container">
-            <div class="filter-container">
-                <div class="filter-group">
-                    <label>
-                        <span class="filter-label-en">Month</span>
-                        <span class="filter-label-ar">شهر</span>
-                    </label>
-                    <select id="monthFilter" class="filter-select">
-                        <option value="all">
-                            <span class="filter-option-en">All</span>
-                            <span class="filter-option-ar">الكل</span>
-                        </option>
-                        <option value="1">
-                            <span class="filter-option-en">January</span>
-                            <span class="filter-option-ar">يناير</span>
-                        </option>
-                        <option value="2">
-                            <span class="filter-option-en">February</span>
-                            <span class="filter-option-ar">فبراير</span>
-                        </option>
-                        <option value="3">
-                            <span class="filter-option-en">March</span>
-                            <span class="filter-option-ar">مارس</span>
-                        </option>
-                        <option value="4">
-                            <span class="filter-option-en">April</span>
-                            <span class="filter-option-ar">أبريل</span>
-                        </option>
-                        <option value="5">
-                            <span class="filter-option-en">May</span>
-                            <span class="filter-option-ar">مايو</span>
-                        </option>
-                        <option value="6">
-                            <span class="filter-option-en">June</span>
-                            <span class="filter-option-ar">يونيو</span>
-                        </option>
-                        <option value="7">
-                            <span class="filter-option-en">July</span>
-                            <span class="filter-option-ar">يوليو</span>
-                        </option>
-                        <option value="8">
-                            <span class="filter-option-en">August</span>
-                            <span class="filter-option-ar">أغسطس</span>
-                        </option>
-                        <option value="9">
-                            <span class="filter-option-en">September</span>
-                            <span class="filter-option-ar">سبتمبر</span>
-                        </option>
-                        <option value="10">
-                            <span class="filter-option-en">October</span>
-                            <span class="filter-option-ar">أكتوبر</span>
-                        </option>
-                        <option value="11">
-                            <span class="filter-option-en">November</span>
-                            <span class="filter-option-ar">نوفمبر</span>
-                        </option>
-                        <option value="12">
-                            <span class="filter-option-en">December</span>
-                            <span class="filter-option-ar">ديسمبر</span>
-                        </option>
-                    </select>
-                </div>
-                <div class="filter-group">
-                    <label>
-                        <span class="filter-label-en">Year</span>
-                        <span class="filter-label-ar">سنة</span>
-                    </label>
-                    <select id="yearFilter" class="filter-select">
-                        <option value="all">
-                            <span class="filter-option-en">All</span>
-                            <span class="filter-option-ar">الكل</span>
-                        </option>
-                        <option value="2024">2024</option>
-                        <option value="2023">2023</option>
-                        <option value="2022">2022</option>
-                        <option value="2021">2021</option>
-                        <option value="2020">2020</option>
-                    </select>
-                </div>
-                <button id="searchBtn" class="search-btn">
-                    <span class="search-text-en">Search</span>
-                    <span class="search-text-ar">بحث</span>
-                </button>
-            </div>
-        </div>
-    </section>
-
-    <!-- Activities Grid -->
+    <!-- Activities & Goals Posts -->
     <section class="activities-content">
         <div class="container">
-            <div id="activitiesGrid" class="activities-grid">
-                <!-- Activity cards will be populated by JavaScript -->
+            <div class="section-header">
+                <h2>
+                    <span class="section-text-ar">الأنشطة والأهداف</span>
+                </h2>
+            </div>
+
+            <div class="posts-list" style="direction: rtl; font-family: 'Cairo', sans-serif; line-height: 1.9; font-size: 1.1rem;">
+                <ul style="list-style: disc; padding-right: 1.25rem;">
+                    <li>تقديم المساعدات الماديه والعينيه في المناسبات بصفه دوريه وشهريه.</li>
+                    <li>تقديم المساعدات الماديه في حالات الوفاه والزواج والعجز كفاله الطفل اليتيم ومساعدته ماديا ومعنويا.</li>
+                    <li>مساعدة الغارمين في تسديد ديونهم.</li>
+                    <li>عمل مبادرات إطعام للفقير والمحتاج.</li>
+                    <li>استلام الملابس الجديده و المستعمله لمساعده الاسر الفقيره.</li>
+                    <li>فتح فصول لتحفيظ القرآن الكريم عمل دوارات والقيام برحلات ترفيهيه وثقافيه للأعضاء المشتركين.</li>
+                    <li>شراء سيارة و تجهيزها لنقل ودفن الموتي.</li>
+                    <li>إنشاء دور للمناسبات.</li>
+                    <li>إنشاء مقابر لدفن الموتي.</li>
+                    <li>إنشاء المكتبات الثقافية والعلمية والدينية للأعضاء وأهالي المنطقه.</li>
+                    <li>القيام برحلات الحج والعمرة للأعضاء المشتركين بالجمعية وزيارة الأماكن المقدسة.</li>
+                    <li>إقامة المعاهد أوالكليات أو المدارس الخاصة بعد موافقة الجهات المختصة.</li>
+                    <li>إنشاء نادي إجتماعي لأعضاء الجمعية لتقوية الروابط الإجتماعية وإقامة الحفلات الخيرية والمسابقات بكافة أنواعها.</li>
+                    <li>إصدار مجلة أو نشرة دورية تعبر عن أنشطة الجمعية وتوعية الجماهير.</li>
+                    <li>إنشاء المستوصفات الطبية والعيادات الخارجية.</li>
+                    <li>المشاركة في القوافل الطبية.</li>
+                    <li>إنشاء مراكز طبية وحضانات للأطفال المبتسرين ومستشفيات ومعاهد طبية بعد موافقة الجهات المختصة.</li>
+                    <li>إقامة المشروعات لتشغيل الخريجين الجدد.</li>
+                    <li>إقامة مراكز الأسر المنتجة ومراكز خدمات المرأه العاملة والمعيلة.</li>
+                    <li>إقامة دور للمغتربات الطالبات والموظفات.</li>
+                    <li>إنشاء دور لأيواء المسنين ورعايتهم رعاية كاملة.</li>
+                    <li>إنشاء أو إدارة دور رعاية للأيتام.</li>
+                    <li>إنشاء أو إدارة دور للحضانة.</li>
+                    <li>إنشاء أو إدارة مكتبات للأطفال.</li>
+                    <li>إنشاء أو إدارة مراكز محو الأمية.</li>
+                    <li>إنشاء مراكز للتثقيف الفكري وتأهيل المعوقين.</li>
+                    <li>رعاية المكفوفين ومرض السرطان والدرن والجزام ومرضي الشلل وتشوهات الحروق.</li>
+                    <li>رعاية أسر المسجونين لحين الإفراج عنهم للمحافظة علي كيان الأسرة.</li>
+                    <li>تقديم كافة الخدمات والرعاية لفئات المحالين للمعاش بالأشتراك مع وزارة التأمينات الإجتماعية مثل دور إيواء وأندية ودور ضيافة أو للإقامة الدائمة من أجل الرعاية المتكاملة.</li>
+                    <li>إقامة الندوات وعمل الملصقات وتوعية الجماهير عن طريق الوسائل السمعية والبصرية بالصحة الإنجابية والرضاعه الطبيعية وختان الإناث.</li>
+                    <li>توعية المواطنين بحقوقهم الدستورية عن طريق الندوات والمحاضرات والمؤتمرات وحلقات نقاشية وإجراء البحوث الميدانية وإصدار النشرات والإصدارات التعريفية بحقوق الإنسان.</li>
+                </ul>
             </div>
         </div>
     </section>
