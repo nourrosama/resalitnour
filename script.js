@@ -5,24 +5,24 @@ let currentLang = 'en';
 
 langToggle.addEventListener('click', () => {
     currentLang = currentLang === 'en' ? 'ar' : 'en';
-    
+
     // Update body lang attribute
     document.body.setAttribute('lang', currentLang);
-    
+
     // Update language button text
     langText.textContent = currentLang === 'en' ? 'EN' : 'عربي';
-    
+
     // Update HTML lang attribute
     document.documentElement.setAttribute('lang', currentLang);
-    
+
     // Store language preference
     localStorage.setItem('preferredLanguage', currentLang);
-    
+
     // Dispatch language change event for other scripts
     window.dispatchEvent(new CustomEvent('languageChanged', {
         detail: { language: currentLang }
     }));
-    
+
     // Add smooth transition effect
     document.body.style.transition = 'all 0.3s ease';
 });
@@ -83,7 +83,7 @@ window.addEventListener('scroll', () => {
 function animateCounter(element, target, duration = 2000) {
     let start = 0;
     const increment = target / (duration / 16);
-    
+
     function updateCounter() {
         start += increment;
         if (start < target) {
@@ -93,7 +93,7 @@ function animateCounter(element, target, duration = 2000) {
             element.textContent = target.toLocaleString();
         }
     }
-    
+
     updateCounter();
 }
 
@@ -132,12 +132,12 @@ donationAmounts.forEach(button => {
     button.addEventListener('click', () => {
         // Remove active class from all buttons
         donationAmounts.forEach(btn => btn.classList.remove('active'));
-        
+
         // Add active class to clicked button
         button.classList.add('active');
-        
+
         const amount = button.getAttribute('data-amount');
-        
+
         if (amount === 'custom') {
             customAmountDiv.style.display = 'block';
             customAmountInput.focus();
@@ -164,7 +164,7 @@ if (donateBtn) {
             // Show donation modal or redirect to payment processor
             showDonationModal(selectedAmount);
         } else {
-            const message = currentLang === 'en' 
+            const message = currentLang === 'en'
                 ? 'Please select a donation amount or enter a custom amount.'
                 : 'يرجى اختيار مبلغ التبرع أو إدخال مبلغ مخصص.';
             alert(message);
@@ -187,17 +187,17 @@ function showDonationModal(amount) {
         align-items: center;
         z-index: 10000;
     `;
-    
+
     const title = currentLang === 'en' ? 'Thank you for your donation!' : 'شكراً لك على تبرعك!';
-    const message = currentLang === 'en' 
+    const message = currentLang === 'en'
         ? `You're about to donate $${amount.toLocaleString()} to Resalat Nour Association.`
         : `أنت على وشك التبرع بمبلغ $${amount.toLocaleString()} لجمعية رسالة نور.`;
-    const redirectText = currentLang === 'en' 
+    const redirectText = currentLang === 'en'
         ? 'This would typically redirect to a secure payment processor.'
         : 'سيتم توجيهك عادةً إلى معالج دفع آمن.';
     const continueBtn = currentLang === 'en' ? 'Continue to Payment' : 'المتابعة للدفع';
     const cancelBtn = currentLang === 'en' ? 'Cancel' : 'إلغاء';
-    
+
     modal.innerHTML = `
         <div style="
             background: white;
@@ -239,7 +239,7 @@ function showDonationModal(amount) {
             </div>
         </div>
     `;
-    
+
     document.body.appendChild(modal);
 }
 
@@ -248,34 +248,34 @@ const contactForm = document.querySelector('.contact-form');
 if (contactForm) {
     contactForm.addEventListener('submit', (e) => {
         e.preventDefault();
-        
+
         const formData = new FormData(contactForm);
         const name = formData.get('name');
         const email = formData.get('email');
         const subject = formData.get('subject');
         const message = formData.get('message');
-        
+
         // Simple validation
         if (!name || !email || !subject || !message) {
-            const errorMsg = currentLang === 'en' 
+            const errorMsg = currentLang === 'en'
                 ? 'Please fill in all fields.'
                 : 'يرجى ملء جميع الحقول.';
             alert(errorMsg);
             return;
         }
-        
+
         // Email validation
         const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
         if (!emailRegex.test(email)) {
-            const errorMsg = currentLang === 'en' 
+            const errorMsg = currentLang === 'en'
                 ? 'Please enter a valid email address.'
                 : 'يرجى إدخال عنوان بريد إلكتروني صحيح.';
             alert(errorMsg);
             return;
         }
-        
+
         // Show success message
-        const successMsg = currentLang === 'en' 
+        const successMsg = currentLang === 'en'
             ? 'Thank you for your message! We\'ll get back to you soon.'
             : 'شكراً لك على رسالتك! سنتواصل معك قريباً.';
         showSuccessMessage(successMsg);
@@ -288,27 +288,27 @@ const newsletterForm = document.querySelector('.newsletter-form');
 if (newsletterForm) {
     newsletterForm.addEventListener('submit', (e) => {
         e.preventDefault();
-        
+
         const email = newsletterForm.querySelector('input[type="email"]').value;
-        
+
         if (!email) {
-            const errorMsg = currentLang === 'en' 
+            const errorMsg = currentLang === 'en'
                 ? 'Please enter your email address.'
                 : 'يرجى إدخال عنوان بريدك الإلكتروني.';
             alert(errorMsg);
             return;
         }
-        
+
         const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
         if (!emailRegex.test(email)) {
-            const errorMsg = currentLang === 'en' 
+            const errorMsg = currentLang === 'en'
                 ? 'Please enter a valid email address.'
                 : 'يرجى إدخال عنوان بريد إلكتروني صحيح.';
             alert(errorMsg);
             return;
         }
-        
-        const successMsg = currentLang === 'en' 
+
+        const successMsg = currentLang === 'en'
             ? 'Thank you for subscribing to our newsletter!'
             : 'شكراً لك على الاشتراك في نشرتنا الإخبارية!';
         showSuccessMessage(successMsg);
@@ -333,9 +333,9 @@ function showSuccessMessage(message) {
         font-family: ${currentLang === 'ar' ? 'Cairo, sans-serif' : 'Inter, sans-serif'};
     `;
     successDiv.textContent = message;
-    
+
     document.body.appendChild(successDiv);
-    
+
     setTimeout(() => {
         successDiv.style.animation = 'slideOut 0.3s ease';
         setTimeout(() => {
@@ -375,7 +375,7 @@ document.head.appendChild(style);
 document.querySelectorAll('.video-card').forEach(card => {
     card.addEventListener('click', () => {
         const videoTitle = card.querySelector('p').textContent;
-        const message = currentLang === 'en' 
+        const message = currentLang === 'en'
             ? `This would open the video: ${videoTitle}`
             : `سيتم فتح الفيديو: ${videoTitle}`;
         alert(message);
@@ -384,12 +384,12 @@ document.querySelectorAll('.video-card').forEach(card => {
 
 // Add loading animation for buttons
 document.querySelectorAll('.btn').forEach(button => {
-    button.addEventListener('click', function() {
+    button.addEventListener('click', function () {
         if (!this.classList.contains('donation-amount')) {
             const originalText = this.innerHTML;
             this.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Loading...';
             this.disabled = true;
-            
+
             setTimeout(() => {
                 this.innerHTML = originalText;
                 this.disabled = false;
@@ -436,7 +436,7 @@ const socialLinks = {
     twitter: 'https://x.com/resalitnour',
     instagram: 'https://www.instagram.com/resalitnour/',
     youtube: 'https://www.youtube.com/@%D8%AC%D9%85%D8%B9%D9%8A%D8%A9%D8%B1%D8%B3%D8%A7%D9%84%D8%A9%D9%86%D9%88%D8%B1%D9%84%D9%84%D8%AA%D9%86%D9%85%D9%8A%D8%A9',
-    email: 'mailto:resalitnour2021@gmail.com'
+    email: 'mailto:Admin@resalitnour.org'
 };
 
 // Update social media links
@@ -458,7 +458,7 @@ document.querySelectorAll('.social-link').forEach(link => {
 // Initialize the page
 document.addEventListener('DOMContentLoaded', () => {
     console.log('Resalat Nour Association website loaded successfully!');
-    
+
     // Add any additional initialization code here
     // For example, loading external data, setting up analytics, etc.
 });
