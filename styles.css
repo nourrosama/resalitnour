@@ -179,10 +179,7 @@ h4 {
 }
 
 p {
-    color: rgb(138, 128, 128);
-    /* text color */
-    -webkit-text-stroke: 1px rgb(0, 0, 0);
-    /* outline around the text */
+    color: rgb(100, 100, 100);
 }
 
 /* Buttons */
@@ -1933,4 +1930,15 @@ p {
 /* Navbar smooth shrink on scroll */
 .navbar {
     transition: padding 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
+}
+/* Section Wave Dividers */
+.wave-divider {
+    position: relative;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.wave-divider svg {
+    display: block;
+    width: 100%;
 }
