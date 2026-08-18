@@ -1930,3 +1930,7 @@ p {
     transform: translateY(-8px);
     box-shadow: 0 20px 40px rgba(26, 92, 37, 0.15);
 }
+/* Navbar smooth shrink on scroll */
+.navbar {
+    transition: padding 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
+}

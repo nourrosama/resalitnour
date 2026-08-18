@@ -67,15 +67,17 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     });
 });
 
-// Navbar background change on scroll
+// Navbar scroll effect
 window.addEventListener('scroll', () => {
     const navbar = document.querySelector('.navbar');
-    if (window.scrollY > 100) {
-        navbar.style.background = 'rgba(255, 255, 255, 0.98)';
-        navbar.style.boxShadow = '0 2px 20px rgba(0, 0, 0, 0.1)';
+    if (window.scrollY > 80) {
+        navbar.style.background = 'rgba(255, 255, 255, 1)';
+        navbar.style.boxShadow = '0 4px 30px rgba(26, 92, 37, 0.12)';
+        navbar.style.padding = '0.6rem 0';
     } else {
         navbar.style.background = 'rgba(255, 255, 255, 0.95)';
         navbar.style.boxShadow = 'none';
+        navbar.style.padding = '1rem 0';
     }
 });
 
