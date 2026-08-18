@@ -408,14 +408,12 @@ window.addEventListener('scroll', () => {
     }
 });
 
-// Add fade-in animation for sections
-const fadeInElements = document.querySelectorAll('.activity-card, .video-card, .value-item');
-
-const fadeInObserver = new IntersectionObserver((entries) => {
+// Scroll reveal animation
+const scrollRevealObserver = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
         if (entry.isIntersecting) {
-            entry.target.style.opacity = '1';
-            entry.target.style.transform = 'translateY(0)';
+            entry.target.classList.add('visible');
+            scrollRevealObserver.unobserve(entry.target);
         }
     });
 }, {
@@ -423,11 +421,11 @@ const fadeInObserver = new IntersectionObserver((entries) => {
     rootMargin: '0px 0px -50px 0px'
 });
 
-fadeInElements.forEach(element => {
-    element.style.opacity = '0';
-    element.style.transform = 'translateY(30px)';
-    element.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
-    fadeInObserver.observe(element);
+document.querySelectorAll(
+    '.activity-card, .video-card, .value-item, .section-header, .contact-item, .team-member, .timeline-item'
+).forEach(el => {
+    el.classList.add('scroll-reveal');
+    scrollRevealObserver.observe(el);
 });
 
 // Social media links configuration
